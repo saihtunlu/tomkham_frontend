@@ -1,0 +1,93 @@
+<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><link rel=icon href=/favicon.png><title>မွၵ်ႇငိုၼ်းၶဝ်ႈ</title><style>.loader {
+        position: fixed;
+        z-index: 99999999999;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgb(255, 255, 255, 1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      /* .logo_ {
+        width: 80px;
+        transition: 1s all;
+      } */
+
+      .marker {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .marker .grow {
+        height: 30px;
+        min-width: 30px;
+        z-index: 999;
+        border-radius: 50%;
+        animation: grow 2s ease-in infinite;
+        background: #6a53d6;
+        box-shadow: 0px 4px 25px 0px rgb(106, 83, 214, 0.4);
+      }
+
+      .marker .dot {
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        z-index: 2;
+        opacity: 0;
+        border-radius: 50%;
+        animation: pulse 2s ease-out;
+        animation-iteration-count: infinite;
+        border: 10px solid rgb(106, 83, 214, 1);
+        background: rgb(106, 83, 214, 0.6);
+      }
+
+      @-webkit-keyframes pulse {
+        0% {
+          -webkit-transform: scale(0);
+          opacity: 1;
+        }
+
+        100% {
+          -webkit-transform: scale(2);
+          opacity: 0;
+        }
+      }
+      @-webkit-keyframes grow {
+        0% {
+          -webkit-transform: scale(1);
+        }
+        55% {
+          -webkit-transform: scale(1.2);
+        }
+        65% {
+          -webkit-transform: scale(0.6);
+        }
+        70% {
+          -webkit-transform: scale(1);
+        }
+      }
+
+      .loader_ {
+        width: 150px;
+      }
+      .loader.hidden {
+        animation: fadeOut 1s;
+        animation-fill-mode: forwards;
+      }
+      .loader.hidden.display_none {
+        display: none !important;
+      }
+      @keyframes fadeOut {
+        100% {
+          opacity: 0;
+          display: none;
+        }
+      }</style><script>window.addEventListener("load", function() {
+        const loader = document.querySelector(".loader");
+        loader.className += " hidden";
+        setTimeout(function() {
+          loader.className += " display_none";
+        }, 1000);
+      });</script><link href=/css/app.1be5bd42.css rel=preload as=style><link href=/css/chunk-vendors.249512d3.css rel=preload as=style><link href=/js/app.21fb83f2.js rel=preload as=script><link href=/js/chunk-vendors.520590b0.js rel=preload as=script><link href=/css/chunk-vendors.249512d3.css rel=stylesheet><link href=/css/app.1be5bd42.css rel=stylesheet></head><body><noscript><strong>We're sorry but MNK doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div class=loader><div style="display: flex;flex-direction:column; align-items:center;"><div class=marker><div class=dot></div><div class=grow></div></div></div></div><div id=app></div><script src=/js/chunk-vendors.520590b0.js></script><script src=/js/app.21fb83f2.js></script></body></html>
